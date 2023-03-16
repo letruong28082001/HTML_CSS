@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+
+.birthday,.email,.message,.name,.password,.sex,
+.birthday select,.email input,.message input,
+.name input,.password input,.sex input{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.register{
+    margin: 50px;
+    border: 1px solid #333;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.register h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: darkred;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.name , .password , .email {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name input, .password input, .email input{
+    width: 70%;
+}
+
+.name span{
+    width: 20%;
+    padding-right: 30px;
+}
+.password span{
+    width: 20%;
+}
+.email span{
+    width: 20%;
+}
+.name{
+    
+}
+
+.sex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sex span{
+    font-weight: bold;
+}
+
+.sex div{
+    width: 79%;
+    padding-left: 11%;
+}
+
+.birthday{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.birthday div{
+    width: 78%;
+    padding-left: 5%;
+}
+
+.password{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.email{
+
+}
+
+.message{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message span{
+    padding-right: 9%;
+}
+
+
+.message textarea{
+    width: 70%;
+}
+
+
+.checkbox{
+    padding: 0 26% 20px;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button{
+    width: 20%;
+    background-color: crimson;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+/* -------------- responsive ----------------- */
+@media only screen and (max-width:1264px){
+    .birthday,.button,.checkbox,.email,.message,.name,.password,.sex{
+        flex-direction: column;
+    }
+    .button input,.email input,.message textarea,.name input,.password input{
+        width: 100% !important;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+    .birthday select{
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+}
