@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign {
+    border: 1px solid #333;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.logo {
+    border: 1px solid #333;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sign-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-up,
+.sign-in,
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+    background-color: royalblue;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #efebeb;
+    cursor: pointer;
+}
+
+.sign-in {
+    margin-left: 10px;
+}
+
+.menu {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    border: 1px solid #333;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu2 ,.menu3{
+    position: relative;
+    line-height: 10px;
+    display: flex;
+    margin: 0 10px;
+}
+
+.menu2 p ,.menu3 p {
+    line-height: 16px;
+}
+.menu2 ul ,.menu3 ul {
+    display: none;
+    text-align: center;
+    width: 150px;
+    background-color: royalblue;
+    position: absolute;
+    margin-top: 34px;
+    margin-left: -47px;
+}
+
+.menu2 ul li,.menu3 ul li {
+    list-style: none;
+    border: 1px solid #333;
+    padding: 15px;
+    border-top: 0px;
+}
+
+.menu2 ul li a,.menu3 ul li a {
+    text-decoration: none;
+    color: #efebeb;
+}
+
+.menu2 div ,.menu3 div {
+    display: flex;
+}
+
+.menu2 div i , .menu3 div i {
+    position: absolute;
+    right: 8px;
+    margin-top: -3px;
+    margin-left: 6px;
+}
+
+.menu3 {
+    margin-left: 0px;
+}
+
+.menu-right {
+    line-height: 16px;
+}
+
+.menu-right .search {
+    height: 100%;
+    padding-left: 5px;
+}
+
+.menu-right .go {
+    height: 100%;
+    padding: 0 10px 0px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.menu2:hover ul,
+.menu3:hover ul {
+    display: block;
+}
+
+
+/* -------------- responsive ----------------- */
+
+@media screen and (max-width:602px) {
+    .sign {
+        justify-content: center;
+    }
+
+    .sign .sign-left {
+        margin-right: 10px;
+    }
+
+    .sign-right>.sign-up,
+    .sign-right>.sign-in {
+        background-color: white;
+        color: #333;
+        border: 1px solid;
+        border-radius: 0px;
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-left {
+        display: block;
+    }
+
+    .menu2,
+    .menu3,
+    .menu4 {
+        margin: 10px 0;
+    }
+
+    .menu1,.menu4{
+        text-align: center;
+    }
+
+    .menu2 ,.menu3 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu2 div i , .menu3 div i {
+        position: absolute;
+        right: 20px;
+    }
+
+    .menu2 .sub-menu2, .menu3 .sub-menu3{
+        background-color: white;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu2 .sub-menu2 li a,.menu3 .sub-menu3 li a{
+        color: black;
+    }
+
+    .menu2:hover,.menu3:hover{
+        padding-bottom: 96px;
+    }
+
+    .menu-right {
+        display: flex;
+        width: 100%;
+        line-height: 45px;
+        height: 45px;
+    }
+    .menu-right .search{
+        width: 100%;
+    }
+}

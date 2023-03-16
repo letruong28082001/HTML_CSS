@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    background-color: black;
+}
+
+#container {}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+header {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+header h2 {
+    text-align: center;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-list img {
+    width: 23.2%;
+    height: 150px;
+    margin-top: 20px !important;
+}
+
+.image-list .image2,
+.image-list .image6 {
+    margin: 0 2.4%;
+}
+
+.image-list .image3,
+.image-list .image7 {
+    margin: 0 2.4% 0 0;
+}
+
+
+/* --------------------------- */
+
+
+.heading1 {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading1>div {
+    display: flex;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.heading1-left {
+    padding: 0 10px 0 0;
+}
+
+.heading1-left p {
+    padding: 20px 21px 0 0;
+}
+
+.heading1-right {
+    width: 113%;
+}
+
+.heading1-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------- */
+
+.heading2 {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.heading2>div {
+    display: flex;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.sub-heading2 h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.sub-heading2 img {
+    float: left;
+    width: 48%;
+    height: 253px;
+    margin: 10px 20px;
+    margin-left: 10px;
+}
+
+/* -------------------------------------- */
+
+
+.title {
+
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title>div {
+    display: flex;
+    width: 80%;
+    padding-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title1 {
+    padding: 5px 0;
+    flex-direction: row-reverse;
+    width: 50%;
+    display: flex;
+}
+
+.title1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.title1-right {
+    padding-right: 10px;
+}
+
+.title1-left h2 {
+    padding-bottom: 5px;
+}
+
+
+/* --------------- responsive ----------------- */
+@media only screen and (max-width: 768px) {
+    .image-list img {
+        width: 49%;
+    }
+
+    .image-list .image2,
+    .image-list .image6 {
+        margin: 0;
+    }
+
+    .image-list .image1,
+    .image-list .image5,
+    .image-list .image3,
+    .image-list .image7 {
+        margin-right: 2%;
+    }
+
+    .heading1>div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading1-left {
+        padding-bottom: 10px;
+    }
+
+    .heading1-right {
+        width: 100%;
+    }
+
+    .title1 {
+        width: 100%;
+        padding: 10px 0;
+        flex-direction: column-reverse !important;
+        display: flex;
+        text-align: center;
+    }
+
+    .title1-right img {
+        width: 100%;
+        height: 250px;
+    }
+}
