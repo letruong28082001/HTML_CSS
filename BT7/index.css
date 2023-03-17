@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.sub-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-left {
+    background-color: rgb(231, 213, 23);
+    width: 15%;
+    border-radius: 2px;
+    border: 2px solid rgb(183, 18, 18);
+    padding: 10px;
+}
+
+.body-left ul li {
+    list-style: none;
+}
+
+.body-midle {
+    padding: 5% 1%;
+    width: 67.5%;
+    background-color: rgb(231, 213, 23);
+    border-radius: 2px;
+    border: 2px solid rgb(183, 18, 18);
+}
+
+.sub-body-midle h2 {
+    padding-bottom: 10px;
+}
+
+.body-right {
+    width: 15%;
+    /*
+    background-color:rgb(231, 213, 23);
+    border-radius: 2px;
+    border: 2px solid rgb(183, 18, 18); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.silder {
+    margin-bottom: 10px;
+}
+
+.silder,
+.adversiting {
+    width: 100%;
+    background-color: rgb(231, 213, 23);
+    border-radius: 2px;
+    border: 2px solid rgb(183, 18, 18);
+    padding: 28% 10px;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.header,
+.footer {
+    width: 100%;
+    background-color: rgb(231, 213, 23);
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid rgb(183, 18, 18);
+}
+
+/* ------------------- responsive target ----------------------------- */
+@media only screen and (max-width: 1024px) {
+    .sub-body {
+        flex-direction: column;
+        display: block;
+    }
+
+    .body-left {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .body-left ul {
+        display: flex;
+        width: 97%;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .body-midle {
+        margin-top: 10px;
+        float: right;
+        width: 84%;
+    }
+
+    .body-right {
+        margin-top: 10px;
+        margin-bottom: -28%;
+    }
+
+    .silder {
+        padding: 57.5% 0%;
+    }
+
+    .adversiting {
+        padding: 10px;
+        margin-bottom: -1%;
+    }
+
+    .footer {
+        float: right;
+        width: 84%;
+        margin-top: 10px;
+    }
+}
+
+
+/* ------------------- responsive mobile ----------------------------- */
+@media only screen and (max-width: 768px) {
+    .sub-body {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .body-left ul {
+        display: block;
+        text-align: start;
+    }
+
+    .footer {
+        float: none;
+        width: 100%;
+    }
+
+    .body-right {
+        margin-bottom: 0;
+    }
+
+    .body-midle {
+        width: 100%;
+    }
+
+    .adversiting,
+    .silder {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .adversiting {
+        margin-bottom: 1px;
+    }
+
+    .body-right {
+        width: 100%;
+    }
+}
