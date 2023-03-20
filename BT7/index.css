@@ -10,16 +10,24 @@ header {
 }
 
 .sub-body {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.body-left,
+.silder,
+.adversiting {
+    padding: 50px;
+}
+
+.body-midle {
+    margin: 0 10px;
 }
 
 .body-left {
     background-color: rgb(231, 213, 23);
-    width: 15%;
     border-radius: 2px;
     border: 2px solid rgb(183, 18, 18);
-    padding: 10px;
+    padding: 40px;
 }
 
 .body-left ul li {
@@ -27,8 +35,6 @@ header {
 }
 
 .body-midle {
-    padding: 5% 1%;
-    width: 67.5%;
     background-color: rgb(231, 213, 23);
     border-radius: 2px;
     border: 2px solid rgb(183, 18, 18);
@@ -39,18 +45,12 @@ header {
 }
 
 .body-right {
-    width: 15%;
-    /*
-    background-color:rgb(231, 213, 23);
-    border-radius: 2px;
-    border: 2px solid rgb(183, 18, 18); */
     display: flex;
     flex-direction: column;
-
 }
 
 .silder {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .silder,
@@ -75,11 +75,63 @@ header {
     border: 2px solid rgb(183, 18, 18);
 }
 
+.body-left {
+    grid-area: left;
+}
+
+.body-midle {
+    grid-area: mid;
+}
+
+.body-right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.sub-body {
+    display: grid;
+    grid-template-areas:
+        'left left left mid mid  right right'
+        'footer footer footer footer footer footer footer '
+}
+
 /* ------------------- responsive target ----------------------------- */
 @media only screen and (max-width: 1024px) {
+    .body-left {
+        grid-area: left;
+    }
+
+    .body-midle {
+        grid-area: mid;
+    }
+
+    .body-right {
+        grid-area: right;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
     .sub-body {
-        flex-direction: column;
-        display: block;
+        display: grid;
+        grid-template-areas:
+            'left left left left left'
+            'right mid mid mid mid'
+            'right footer footer footer footer '
+    }
+
+    .sub-body {
+        display: grid;
+    }
+
+
+    .body-left {
+        padding: 10px !important;
+        margin-bottom: 10px;
     }
 
     .body-left {
@@ -98,32 +150,34 @@ header {
     }
 
     .body-midle {
-        margin-top: 10px;
-        float: right;
-        width: 84%;
-    }
-
-    .body-right {
-        margin-top: 10px;
-        margin-bottom: -28%;
-    }
-
-    .silder {
-        padding: 57.5% 0%;
+        margin: 0 0 0 10px;
+        padding: 27px;
     }
 
     .adversiting {
         padding: 10px;
-        margin-bottom: -1%;
     }
 
     .footer {
-        float: right;
-        width: 84%;
-        margin-top: 10px;
+        width: auto;
+        padding: 6px !important;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    .silder {
+        padding: 68.5px 41px;
     }
 }
 
+
+/* ------------------------------------------------------------------- */
+
+@media only screen and (max-width : 864px) {
+    .silder {
+        padding: 76.5px 41px;
+    }
+}
 
 /* ------------------- responsive mobile ----------------------------- */
 @media only screen and (max-width: 768px) {
@@ -148,6 +202,8 @@ header {
 
     .body-midle {
         width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     .adversiting,
@@ -162,5 +218,9 @@ header {
 
     .body-right {
         width: 100%;
+    }
+
+    .footer {
+        margin-left: 0;
     }
 }
