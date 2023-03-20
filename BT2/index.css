@@ -126,7 +126,7 @@
 
 /* -------------- responsive ----------------- */
 
-@media screen and (max-width:602px) {
+@media screen and (max-width:690px) {
     .sign {
         justify-content: center;
     }
